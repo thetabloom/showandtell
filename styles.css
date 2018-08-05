@@ -8,11 +8,10 @@ body {
   display: grid;
   grid-template-columns: repeat (autofill, minmax(20em, 1fr));
   grid-template-rows: repeat(95, 1fr);
-  grid-gap: 1em;
+  grid-gap: .5em;
 }
 
 .one {
-  
   background-color: black;
   grid-column: span 2;
   grid-row: span 50;
@@ -28,9 +27,13 @@ body {
   background-size: cover;
 }
 
+li {
+  display: inline-block;
+}
+
 h1 {
-  position: fixed;
-  margin: 0 auto 0 .6em;
+  /*position: fixed;*/
+  margin: 4em .2em 0 .2em;
   text-align: center;
   font-size: 9em;
   background: -webkit-linear-gradient(yellow, #333);
@@ -39,8 +42,9 @@ h1 {
 }
 
 .two {
+  font-family: sans-serif;
   background-color: transparent;
-  color: white;
+  color: yellow;
   grid-column: span 1;
   grid-row: span 50;
   background: url("images/Aughra.jpg") no-repeat center center fixed;
@@ -50,7 +54,24 @@ h1 {
   background-size: cover;
 }
 
+.movie-facts {
+  font-size: 3em;
+  
+  display: inline;
+  margin: 5em 0em 0 1em;
+}
+
+.list {
+  width: 23em;
+  scroll-behavior: inherit;
+}
+
+li {
+  padding-top: 2em;
+}
+
 .three {
+  font-family: sans-serif;
   background-color: white;
   grid-column: span 1;
   grid-row: span 50;
@@ -60,4 +81,23 @@ h1 {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.title {
+  display: inline;
+}
+.jim-henson {
+  font-size: 2em;
+  color: yellow;
+  
+  margin: 5em 0 0 4em;
+  width: 20em;
+  background:  
+    linear-gradient(
+      rgba(0, 0, 100, 0.45), 
+      rgba(0, 0, 100, 0.45)
+    ),
+  url("images/thedarkcrystal.jpeg")
+}
+
+
 
