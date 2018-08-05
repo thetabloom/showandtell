@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  font-family: regular, sans-serif;
+}
+
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax(20em, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.one {
+  
+  background-color: black;
+  grid-column: span 2;
+  grid-row: span 55;
+  background: url("images/thedarkcrystal.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  position: fixed;
+  margin: 0 auto 0 .6em;
+  text-align: center;
+  font-size: 9em;
+  background: -webkit-linear-gradient(yellow, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.two {
+  background-color: transparent;
+  color: white;
+  grid-column: span 1;
+  grid-row: span 40;
+  background: url("images/Aughra.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p {
+  word-wrap: wrap;
+}
+
+.three {
+  background-color: #000;
+  grid-column: span 1;
+  grid-row: span 40;
+  /*filter:alpha(opacity=70);
+  -moz-opacity:.70;
+  opacity:.70;*/
+  background: url("images/thedarkcrystal.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
