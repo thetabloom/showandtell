@@ -6,8 +6,8 @@ body {
 
 .main-content {
   display: grid;
-  grid-template-columns: repeat(autofill, minmax(20em, 1fr));
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat (autofill, minmax(20em, 1fr));
+  grid-template-rows: repeat(95, 1fr);
   grid-gap: 1em;
 }
 
@@ -15,8 +15,13 @@ body {
   
   background-color: black;
   grid-column: span 2;
-  grid-row: span 55;
-  background: url("images/thedarkcrystal.jpeg") no-repeat center center fixed;
+  grid-row: span 50;
+  background:  
+    linear-gradient(
+      rgba(0, 0, 200, 0.45), 
+      rgba(0, 0, 200, 0.45)
+    ),
+  url("images/thedarkcrystal.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -37,7 +42,7 @@ h1 {
   background-color: transparent;
   color: white;
   grid-column: span 1;
-  grid-row: span 40;
+  grid-row: span 50;
   background: url("images/Aughra.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -45,17 +50,10 @@ h1 {
   background-size: cover;
 }
 
-p {
-  word-wrap: wrap;
-}
-
 .three {
-  background-color: #000;
+  background-color: white;
   grid-column: span 1;
-  grid-row: span 40;
-  /*filter:alpha(opacity=70);
-  -moz-opacity:.70;
-  opacity:.70;*/
+  grid-row: span 50;
   background: url("images/thedarkcrystal.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
