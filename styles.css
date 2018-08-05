@@ -56,14 +56,12 @@ h1 {
 
 .movie-facts {
   font-size: 3em;
-  
   display: inline;
   margin: 5em 0em 0 1em;
 }
 
 .list {
   width: 23em;
-  scroll-behavior: inherit;
 }
 
 li {
@@ -72,7 +70,7 @@ li {
 
 .three {
   font-family: sans-serif;
-  background-color: white;
+  color: yellow;
   grid-column: span 1;
   grid-row: span 50;
   background: url("images/thedarkcrystal.jpeg") no-repeat center center fixed;
@@ -82,21 +80,23 @@ li {
   background-size: cover;
 }
 
-.title {
-  display: inline;
+.bio {
+  margin: 1em 0 3em 10em;
 }
+
+.title {
+  display: block;
+}
+
 .jim-henson {
+  display: inline-block;
   font-size: 2em;
-  color: yellow;
-  
-  margin: 5em 0 0 4em;
   width: 20em;
   background:  
     linear-gradient(
       rgba(0, 0, 100, 0.45), 
       rgba(0, 0, 100, 0.45)
-    ),
-  url("images/thedarkcrystal.jpeg")
+    );
 }
 
 
