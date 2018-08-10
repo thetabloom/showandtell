@@ -1,20 +1,26 @@
+/** {
+margin: 0;
+padding: 0;
+}*/
+
 body {
   background-color: black;
   font-family: regular, sans-serif;
+  padding: 0;
 }
 
-
 .main-content {
+  box-sizing: content-box;
   display: grid;
-  grid-template-columns: repeat (autofill, minmax(20em, 1fr));
-  grid-template-rows: repeat(95, 1fr);
+  grid-template-columns: 1fr 1fr 1fr);
   grid-gap: .5em;
+  width: 100%;
 }
 
 .one {
   background-color: black;
   grid-column: span 2;
-  grid-row: span 50;
+  grid-row: span 45;
   background:  
     linear-gradient(
       rgba(0, 0, 200, 0.45), 
@@ -31,19 +37,64 @@ li {
   display: inline-block;
 }
 
+.header-buttons {
+  display: inline-block;
+  margin: 1em;
+  padding-top: .2em;
+}
+
+.button {
+  background-color: #4b4545;
+  border-radius: 100em;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 1em 1.2em 1em 1.2em;
+}
+
+.button:hover {
+  background-color: #2f5651;
+}
+
+input {
+  margin: 1.8em 5em 0 80em;
+  padding: .9em;
+  background-color: #4b4545;
+  outline: none;
+  border: none;
+}
+
+input:hover {
+  background-color: #2f5651;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+
+.fa-circle {
+  color: #00db1d;
+  padding-right: .5em;
+}
+
 h1 {
-  /*position: fixed;*/
   margin: 4em .2em 0 .2em;
   text-align: center;
   font-size: 9em;
   background: -webkit-linear-gradient(yellow, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+}
+
+h1:hover{
+  background: -webkit-linear-gradient(transparent, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .two {
   font-family: sans-serif;
-  background-color: transparent;
   color: yellow;
   grid-column: span 1;
   grid-row: span 50;
@@ -52,20 +103,26 @@ h1 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /*padding: 2.2em 0 0 15em;*/
+  text-shadow: 2px solid black;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 .movie-facts {
-  font-size: 3em;
-  display: inline;
-  margin: 5em 0em 0 1em;
+  font-size: 2em;
+  margin: 2em 2em 0 2em;
 }
 
 .list {
-  width: 23em;
+  text-align: left;
+  margin-right: 2em;
+
 }
 
 li {
-  padding-top: 2em;
+  padding-top: 1.8em;
 }
 
 .three {
@@ -81,17 +138,21 @@ li {
 }
 
 .bio {
-  margin: 1em 0 3em 10em;
+  margin: 2.5em 0 0 20em;
+  justify-content: space-evenly;
 }
 
 .title {
-  display: block;
+  font-size: 3em;
+  position: absolute;
+  top: 18.8em;
 }
 
 .jim-henson {
-  display: inline-block;
-  font-size: 2em;
+  margin-top: 8em;
   width: 20em;
+  line-height: 2em;
+  font-size: 1.5em;
   background:  
     linear-gradient(
       rgba(0, 0, 100, 0.45), 
